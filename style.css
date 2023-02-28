@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    background-image: url("istockphoto-928344322-612x612.jpg");
+}
+
+#container {
+    background-color: rgba(240, 255, 255, 0.384);
+    box-shadow: 5px 5px 60px 10px rgba(12, 12, 5, 0.397) inset;
+    border-radius: 2em;
+    margin-top: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    height: 20em;
+    width: 10em;
+    padding: 2em;
+}
+
+#data {
+    margin: 1em;
+    width: 2em;
+
+}
+
+button {
+    width: 7em;
+    height: 2em;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#operation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#function {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.funtion_btn {
+    margin-top: 2em;
+    border-radius: 45px;
+}

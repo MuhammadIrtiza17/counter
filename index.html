@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1> counter </h1>
+        <div id="operation">
+            <button onclick=" incrementValue()">+</button>
+            <input id="data" type="text" value="0">
+            <button onclick=" decrementValue()">-</button>
+        </div>
+        <div id="function">
+            <button id="saved" onclick="save()" class="funtion_btn save">save</button>
+            <button onclick="reset()" class="funtion_btn reset">reset</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script>
+        function reset() {
+            var value = parseInt(document.getElementById('data').value, 10);
+
+            document.getElementById('data').value = 0;
+
+        }
+        function incrementValue() {
+            var value = parseInt(document.getElementById('data').value, 10);
+            value++;
+            document.getElementById('data').value = value;
+        }
+        function decrementValue() {
+            var value = parseInt(document.getElementById('data').value, 10);
+            value--;
+            document.getElementById('data').value = value;
+        }
+        function save() {
+            var value = parseInt(document.getElementById('data').value, 10);
+            savedData = document.getElementById("saved");
+            document.getElementById("result").innerHTML = "LastData:" + value;
+        }
+    </script>
+</body>
+
+</html>
